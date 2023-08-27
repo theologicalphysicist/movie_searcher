@@ -86,6 +86,12 @@ class AlephContainerStack(Stack):
             environment={
                 "S3_BUCKET": os.environ["S3_BUCKET"]
             },
+            role=iam.Role.from_role_arn(
+                scope=self,
+                id="aleph-lambda-role",
+                role_arn=os.environ["ROLE_ARN"]
+            ),
+
             memory_size=512,
             timeout=Duration.seconds(10)
         )

@@ -8,6 +8,7 @@ import dotenv
 #_ LOCAL
 from logger import printJSON, getLogger
 
+
 LAMBDA_LOGGER = getLogger("Lambda")
 
 
