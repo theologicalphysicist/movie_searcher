@@ -1,0 +1,10 @@
+#! TO BE USED FOR LOCAL DEVELOPMENT
+services:
+    web:
+        env_file: 
+            - ./.env.local
+        build: 
+            context: .
+        image: aleph:latest
+        ports:
+            - "9000:8080"

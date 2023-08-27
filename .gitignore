@@ -1,12 +1,35 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+./.vscode
+
+#_ PYTHON
+**/*/__pycache__
+
+#_ LAMBDA
+lambdas/env/
+lambdas/assets
+lambdas/aleph-cdk/.venv
+lambdas/*.yaml
+
+#_ AWS
+lambdas/.aws-sam
+lambdas/aleph-cdk/cdk.*
+lambdas/aleph-cdk/*.lock
+lambdas/aleph-cdk/bootstrap*
+lambdas/**/*/*.zip
+#_ SCRIPTS
+lambdas/aleph-cdk/*-stack/*.sh
+lambdas/aleph-cdk/*.bat
+
 #_ ALL
 **/*/node_modules
 **/*/.env
+**/*/.env.*
 
 #_ CSV
 **/*/csv
 
+#_ FRONTEND
 # dependencies
 /.pnp
 .pnp.js

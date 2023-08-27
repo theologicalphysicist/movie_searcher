@@ -1,0 +1,7 @@
+{
+    "resartable": "rs",
+    "watch": [
+        "aleph-cdk/"
+    ],
+    "ext": "py"
+}

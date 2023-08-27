@@ -23,3 +23,16 @@ body {
             transparent,
             rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb)); */
 }
+
+table tbody tr td {
+    display: table-cell;
+}
+
+table tbody tr td p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: visible;
+    text-overflow: ellipsis;
+    /* word-wrap: break-word; */
+}
